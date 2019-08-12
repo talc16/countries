@@ -47,18 +47,6 @@ jQuery(document).ready(function ($) {
 
 
 
-function createSlider(data) {
 
-    if ($("#slider ul").children().length === 0) {
-        const emptySlide = $("<li></li>").html("slide to see flags");
-        $("#slider ul").append(emptySlide);
-    }
-    const flag = $("<li></li>").append($("<img></img>").attr("src", data.flag));
-    $("#slider ul").append(flag);
-
-    flag.prepend($("<span></span>").html(data.capital).attr("class", "capital"));
-
-
-};
 
 
